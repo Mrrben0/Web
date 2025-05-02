@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Périnat & Vous</title>
+    <link href="css/Contact.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital@1&family=Nunito:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section id="Transition">
+        <div id="page-transition"
+            style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #FFF5F0; z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.5s">
+            <div
+                style="width: 50px; height: 50px; border: 4px solid #ffffff; border-top: 4px solid #E8BFC9; border-radius: 50%; animation: spin 1s linear infinite">
+            </div>
+        </div>
+
+        <style>
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+
+        <script>
+            // Cacher l'écran de transition une fois la page chargée
+            window.addEventListener('load', function () {
+                setTimeout(function () {
+                    document.getElementById('page-transition').style.opacity = '0';
+                    setTimeout(function () {
+                        document.getElementById('page-transition').style.display = 'none';
+                    }, 500);
+                }, 200);
+            });
+        </script>
+    </section>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="Accueil.html"><img src="img/perinat-et-vous-logo.png" alt="Logo Périnat & Vous"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Accueil.html#Accueil">Accueil</a></li>
+                    <li><a href="Accueil.html#prestations">Prestations</a></li>
+                    <li><a href="Accueil.html#temoignages">Témoignages</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Rdv.html" class="cta-button active">Prendre RDV</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-important-links">
+                <a href="Accueil.html" class="mobile-Accueil-button">Accueil</a>
+                <a href="Contact.html" class="mobile-contact-button">Contact</a>
+                <a href="Rdv.html" class="mobile-cta-button">Prendre RDV</a>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="hero-contact">
+        <div class="container">
+            <h1>Contactez-moi</h1>
+            <p class="subtitle">Je suis à votre écoute pour toute question ou prise de rendez-vous</p>
+        </div>
+    </section>
+
+    <section class="about-me">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="img/ImgPersonnes/Manon.png" alt="Portrait de Manon">
+            </div>
+            <div class="about-text">
+                <h2>Manon Joulié</h2>
+                <span class="profession">Praticienne périnatale certifiée</span>
+                <p>Bienvenue ! Je suis Manon, praticienne périnatale certifiée passionnée et spécialisée dans
+                    l'accompagnement
+                    périnatal. Depuis toujours attirée par le monde de la maternité et de la parentalité, j'ai choisi de
+                    me consacrer pleinement au bien-être des familles.</p>
+                <p>Formée au CEFAP de Bordeaux et riche d'une expérience en maternité, j'ai développé une approche
+                    bienveillante et respectueuse du rythme de chaque famille. Mon objectif est de vous accompagner avec
+                    douceur et confiance dans ces premiers instants précieux avec votre bébé.</p>
+                <p>Chaque histoire est unique, et c’est pourquoi je propose des accompagnements personnalisés, adaptés à
+                    vos besoins et à vos valeurs. Je serais honorée de vous Accueillir et de partager avec vous cette
+                    belle aventure de la parentalité.</p>
+                <div class="qualifications">
+                    <span class="qualification-badge">Diplômée d'État</span>
+                    <span class="qualification-badge">Spécialisée en périnatalité</span>
+                    <span class="qualification-badge">Expérience en maternité</span>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="circle-decoration circle-beige"></div>
+        <div class="circle-decoration circle-pink"></div>
+        <div class="circle-decoration circle-green"></div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <a href="https://www.google.com/maps?q=8+chemin+de+l'atelier+69330+JONS" target="_blank">
+                        <div class="info-icon">
+                            <img src="img/Logo/Map3.png" alt="Localisation">
+                        </div>
+                        <h3>Adresse</h3>
+                        <p>8 chemin de l'atelier<br>69330 JONS</p>
+                    </a>
+
+                </div>
+
+                <div class="info-card">
+                    <a href="tel:+33744401369">
+                        <div class="info-icon">
+                            <img src="img/Logo/Telephone3.png" alt="Téléphone">
+                        </div>
+                        <h3>Téléphone</h3>
+                        <p>07 44 40 13 69</p>
+
+                    </a>
+
+                </div>
+
+                <div class="info-card">
+                    <a href="mailto:Perinatetvous@gmail.com">
+                        <div class="info-icon">
+                            <img src="img/Logo/Mail3.png" alt="Email">
+                        </div>
+                        <h3>Email</h3>
+                        <p>Perinatetvous@gmail.com</p>
+
+                    </a>
+
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <img src="img/Logo/Horloge3.png" alt="Horaires">
+                    </div>
+                    <h3>Horaires</h3>
+                    <p>Mercredi : 9h - 18h<br>Vendredi : 9h - 18h</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <h2>Où me trouver</h2>
+            <div class="map-container">
+                <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=8%20Chem.%20de%20l'Atelier,%2069330%20Jons+(P%C3%A9rinat%20et%20vous)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+
+
+            </div>
+
+
+
+
+            <div class="directions">
+                <h3>Comment venir ?</h3>
+                <div class="directions-grid">
+                    <div class="direction-item">
+                        <div class="direction-icon">
+                            <img src="img/Logo/Voiture3.png" alt="Voiture">
+                        </div>
+                        <div class="direction-text">
+                            <h4>En voiture</h4>
+                            <p>Adresse : 8 Chemin de l'Atelier, 69330 Jons<br>Stationnement facile à proximité</p>
+                        </div>
+                    </div>
+
+                    <div class="direction-item">
+                        <div class="direction-icon">
+                            <img src="img/Logo/Bus3.png" alt="Bus">
+                        </div>
+                        <div class="direction-text">
+                            <h4>En bus</h4>
+                            <p>Ligne 47<br>Arrêt Jons Centre à 5 minutes à pied</p>
+                        </div>
+                    </div>
+
+                    <div class="direction-item">
+                        <div class="direction-icon">
+                            <img src="img/Logo/Parking3.png" alt="Parking">
+                        </div>
+                        <div class="direction-text">
+                            <h4>Parking</h4>
+                            <p>Places gratuites disponibles à proximité immédiate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="circle-decoration circle-beige"></div>
+        <div class="circle-decoration circle-pink"></div>
+        <div class="circle-decoration circle-green"></div>
+    </section>
+
+    <section class="contact-form" id="form-contact">
+        <div class="container">
+            <div class="circle-decoration circle-beige contact-circle"></div>
+            <div class="circle-decoration circle-pink contact-circle"></div>
+            <div class="circle-decoration circle-green contact-circle"></div>
+            <h2>Une Question ?</h2>
+            <p class="form-intro">Vous avez une question ou souhaitez prendre rendez-vous ? Remplissez le formulaire
+                ci-dessous et je vous répondrai dans les meilleurs délais.</p>
+
+            <form class="contact-form-container">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nom">Nom *</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">Prénom *</label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="sujet">Sujet *</label>
+                    <select id="sujet" name="sujet" required>
+                        <option value="">Sélectionnez un sujet</option>
+                        <option value="rdv">Demande de rendez-vous</option>
+                        <option value="info">Demande d'informations</option>
+                        <option value="tarifs">Renseignements sur les tarifs</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <div class="form-group check-group">
+                    <input type="checkbox" id="rgpd" name="rgpd" required>
+                    <label for="rgpd">J'accepte que mes données soient utilisées pour traiter ma demande *</label>
+                </div>
+
+                <button type="submit" class="submit-button">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="social-contact">
+        <div class="container">
+            <h2>Suivez-moi sur les réseaux sociaux</h2>
+            <div class="social-grid">
+                <a href="https://www.facebook.com/people/PerinatVous/100091369897391/" target="_blank"
+                    class="social-card">
+                    <div class="social-card-icon">
+                        <img src="img/Logo/Facebook3.png" alt="Facebook">
+                    </div>
+                    <h3>Facebook</h3>
+                    <p>Suivez mon actualité et mes conseils de puériculture</p>
+                </a>
+
+                <a href="https://www.instagram.com/perinat_et_vous" target="_blank" class="social-card">
+                    <div class="social-card-icon">
+                        <img src="img/Logo/Instagram3.png" alt="Instagram">
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>Découvrez les moments de bien-être avec les bébés</p>
+                </a>
+
+                <a href="https://www.tiktok.com/@perinatetvous" target="_blank" class="social-card">
+                    <div class="social-card-icon">
+                        <img src="img/Logo/Tiktok3.png" alt="TikTok">
+                    </div>
+                    <h3>TikTok</h3>
+                    <p>Apprenez des astuces en vidéo pour la parentalité</p>
+                </a>
+            </div>
+            <div class="circle-decoration circle-beige"></div>
+            <div class="circle-decoration circle-pink"></div>
+            <div class="circle-decoration circle-green"></div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-container">
+                <div class="newsletter-text">
+                    <h2>Restez informé(e)</h2>
+                    <p>Inscrivez-vous à ma newsletter pour recevoir mes conseils de puériculture et les actualités de
+                        Périnat & Vous</p>
+                </div>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Votre adresse email">
+                    <button type="submit" class="newsletter-button">S'inscrire</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <p>Périnat</p>
+                <p>& Vous</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="Obligations.html#mentions-legales" class="footer-link">Mentions légales</a>
+                <a href="Obligations.html#politique-confidentialite" class="footer-link">Politique de confidentialité</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.facebook.com/people/PerinatVous/100091369897391/" target="_blank"
+                    class="social-icon"><img src="img/Logo/Facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/perinat_et_vous" target="_blank" class="social-icon"><img
+                        src="img/Logo/Instagram.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@perinatetvous" target="_blank" class="social-icon"><img
+                        src="img/Logo/Tiktok.png" alt="TikTok"></a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            © 2025 Périnat & Vous - Tous droits réservés
+        </div>
+    </footer>
+
+    <script>
+        // Gestion du header transparent au scroll
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('transparent');
+            } else {
+                header.classList.remove('transparent');
+            }
+        });
+
+        // Animation pour les éléments au scroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.info-card, .about-text, .about-image, .form-group, .social-card').forEach(el => {
+            observer.observe(el);
+            el.classList.add('fade-element');
+        });
+
+        // Validation du formulaire
+        document.querySelector('.contact-form-container').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Ici vous pourriez ajouter votre logique d'envoi du formulaire
+            // Par exemple avec fetch ou XMLHttpRequest
+
+            alert('Votre message a bien été envoyé ! Je vous répondrai dans les plus brefs délais.');
+            this.reset();
+        });
+    </script>
+    <script src="Javascript/simple-transition.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales et Politique de Confidentialité - Périnat & Vous</title>
+    <link href="css/Services.css" rel="stylesheet" />
+    <link href="css/mention-legale-politique.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital@1&family=Nunito:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section id="Transition">
+        <div id="page-transition"
+            style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #FFF5F0; z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.5s">
+            <div
+                style="width: 50px; height: 50px; border: 4px solid #ffffff; border-top: 4px solid #E8BFC9; border-radius: 50%; animation: spin 1s linear infinite">
+            </div>
+        </div>
+
+        <style>
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+
+        <script>
+            // Cacher l'écran de transition une fois la page chargée
+            window.addEventListener('load', function () {
+                setTimeout(function () {
+                    document.getElementById('page-transition').style.opacity = '0';
+                    setTimeout(function () {
+                        document.getElementById('page-transition').style.display = 'none';
+                    }, 500);
+                }, 200);
+            });
+        </script>
+    </section>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="Accueil.html"><img src="img/perinat-et-vous-logo.png" alt="Logo Périnat & Vous"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Accueil.html">Accueil</a></li>
+                    <li><a href="Accueil.html#prestations">Prestations</a></li>
+                    <li><a href="Accueil.html#temoignages">Témoignages</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Rdv.html" class="cta-button">Prendre RDV</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-important-links">
+                <a href="Accueil.html" class="mobile-Accueil-button">Accueil</a>
+                <a href="Contact.html" class="mobile-contact-button">Contact</a>
+                <a href="Rdv.html" class="mobile-cta-button">Prendre RDV</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="legal-section">
+        <div class="container">
+            <h1 class="legal-title">Mentions Légales et Politique de Confidentialité</h1>
+            
+            <div class="tabs-container">
+                <a href="#mentions-legales" class="tab-button active" onclick="openTab('mentions-legales', event)">Mentions Légales</a>
+                <a href="#politique-confidentialite" class="tab-button" onclick="openTab('politique-confidentialite', event)">Politique de Confidentialité</a>
+            </div>
+            
+            <div id="mentions-legales" class="tab-content active legal-container">
+                <div class="legal-text">
+                    <h2 class="legal-subtitle">1. Informations légales</h2>
+                    <p>Le site Périnat & Vous est édité par :</p>
+                    <p>
+                        [Nom de l'entreprise ou de la personne] <br>
+                        [Forme juridique, capital social] <br>
+                        [Adresse du siège social] <br>
+                        [Numéro SIRET] <br>
+                        [Numéro d'immatriculation]
+                    </p>
+                    <p>
+                        <strong>Directeur de la publication :</strong> [Nom du directeur de publication] <br>
+                        <strong>Responsable de la rédaction :</strong> [Nom du responsable]
+                    </p>
+
+                    <h2 class="legal-subtitle">2. Hébergement</h2>
+                    <p>Le site Périnat & Vous est hébergé par :</p>
+                    <p>
+                        [Nom de l'hébergeur] <br>
+                        [Adresse] <br>
+                        [Numéro de téléphone]
+                    </p>
+
+                    <h2 class="legal-subtitle">3. Propriété intellectuelle</h2>
+                    <p>L'ensemble des éléments constituant le site Périnat & Vous (textes, graphismes, logiciels, photographies, images, vidéos, sons, plans, logos, marques, créations et œuvres protégeables diverses, bases de données, etc.) ainsi que le site lui-même, relèvent des législations françaises et internationales sur le droit d'auteur et la propriété intellectuelle.</p>
+                    <p>Ces éléments sont la propriété exclusive de [Nom de l'entreprise ou de la personne]. Toute reproduction ou représentation, en tout ou partie, à d'autres fins sur un quelconque support est interdite sans l'autorisation expresse et préalable de [Nom de l'entreprise ou de la personne] et constituerait une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la Propriété Intellectuelle.</p>
+
+                    <h2 class="legal-subtitle">4. Limitation de responsabilité</h2>
+                    <p>Les informations contenues sur ce site sont aussi précises que possible et le site est périodiquement mis à jour, mais peut toutefois contenir des inexactitudes, des omissions ou des lacunes. Si vous constatez une erreur ou ce qui peut être un dysfonctionnement, merci de bien vouloir le signaler par email en décrivant le problème de la manière la plus précise possible.</p>
+                    <p>Tout contenu téléchargé se fait aux risques et périls de l'utilisateur et sous sa seule responsabilité. En conséquence, [Nom de l'entreprise ou de la personne] ne saurait être tenu responsable d'un quelconque dommage subi par l'ordinateur de l'utilisateur ou d'une quelconque perte de données consécutives au téléchargement.</p>
+
+                    <h2 class="legal-subtitle">5. Liens hypertextes</h2>
+                    <p>Les sites internet peuvent offrir des liens vers d'autres sites internet ou d'autres ressources disponibles sur Internet. [Nom de l'entreprise ou de la personne] ne dispose d'aucun moyen pour contrôler les sites en connexion avec ses sites internet et ne répond pas de la disponibilité de tels sites et sources externes, ni ne la garantit.</p>
+
+                    <h2 class="legal-subtitle">6. Droit applicable et juridiction compétente</h2>
+                    <p>Les présentes mentions légales sont régies par la loi française. En cas de litige, les tribunaux français seront seuls compétents.</p>
+                </div>
+            </div>
+            
+            <div id="politique-confidentialite" class="tab-content legal-container">
+                <div class="legal-text">
+                    <h2 class="legal-subtitle">1. Collecte des informations personnelles</h2>
+                    <p>Dans le cadre de l'utilisation du site Périnat & Vous, nous sommes amenés à collecter des données personnelles vous concernant, notamment lorsque vous :</p>
+                    <ul>
+                        <li>Prenez rendez-vous via notre plateforme Calendly</li>
+                        <li>Nous contactez via notre formulaire de contact</li>
+                        <li>Vous inscrivez à notre newsletter</li>
+                    </ul>
+                    <p>Les informations personnelles que nous collectons peuvent comprendre votre nom, prénom, adresse e-mail, numéro de téléphone, et toute autre information que vous nous communiquez volontairement.</p>
+
+                    <h2 class="legal-subtitle">2. Utilisation des informations</h2>
+                    <p>Les informations que nous collectons sont utilisées pour :</p>
+                    <ul>
+                        <li>Gérer vos rendez-vous et vous fournir les services demandés</li>
+                        <li>Vous contacter en réponse à une demande de votre part</li>
+                        <li>Vous envoyer des informations sur nos activités (si vous avez accepté de les recevoir)</li>
+                        <li>Améliorer notre site et nos services</li>
+                    </ul>
+
+                    <h2 class="legal-subtitle">3. Partage des informations</h2>
+                    <p>Nous ne vendons, n'échangeons et ne transférons pas vos informations personnelles à des tiers sans votre consentement, sauf pour fournir les services que vous avez demandés (comme la prise de rendez-vous via Calendly) ou si nous y sommes contraints par la loi.</p>
+
+                    <h2 class="legal-subtitle">4. Protection des informations</h2>
+                    <p>Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos informations personnelles contre tout accès non autorisé, altération, divulgation ou destruction.</p>
+
+                    <h2 class="legal-subtitle">5. Cookies</h2>
+                    <p>Notre site peut utiliser des cookies pour améliorer votre expérience. Un cookie est un petit fichier texte stocké sur votre ordinateur pour aider le site à mémoriser certaines informations. Vous pouvez configurer votre navigateur pour refuser les cookies ou être alerté lorsque des cookies sont envoyés.</p>
+
+                    <h2 class="legal-subtitle">6. Calendly et autres services tiers</h2>
+                    <p>Notre site utilise le service Calendly pour la gestion des rendez-vous. Lorsque vous prenez rendez-vous via notre site, vos informations personnelles sont également soumises à la politique de confidentialité de Calendly, que nous vous invitons à consulter.</p>
+
+                    <h2 class="legal-subtitle">7. Droits relatifs à vos données</h2>
+                    <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants concernant vos données personnelles :</p>
+                    <ul>
+                        <li>Droit d'accès à vos données</li>
+                        <li>Droit de rectification des données inexactes</li>
+                        <li>Droit à l'effacement de vos données</li>
+                        <li>Droit à la limitation du traitement</li>
+                        <li>Droit à la portabilité de vos données</li>
+                        <li>Droit d'opposition au traitement de vos données</li>
+                    </ul>
+                    <p>Pour exercer ces droits, vous pouvez nous contacter à l'adresse suivante : [Adresse email de contact]</p>
+
+                    <h2 class="legal-subtitle">8. Modifications de notre politique de confidentialité</h2>
+                    <p>Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Les modifications entreront en vigueur dès leur publication sur cette page.</p>
+                    
+                    <h2 class="legal-subtitle">9. Contact</h2>
+                    <p>Pour toute question concernant cette politique de confidentialité, vous pouvez nous contacter à : [Adresse email de contact]</p>
+                </div>
+            </div>
+        </div>
+        <div class="circle-decoration circle-beige"></div>
+        <div class="circle-decoration circle-pink"></div>
+        <div class="circle-decoration circle-green"></div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <p>Périnat</p>
+                <p>& Vous</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="Obligations.html#mentions-legales" class="footer-link">Mentions légales</a>
+                <a href="Obligations.html#politique-confidentialite" class="footer-link">Politique de confidentialité</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.facebook.com/people/PerinatVous/100091369897391/" target="_blank"
+                    class="social-icon"><img src="img/Logo/Facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/perinat_et_vous" target="_blank" class="social-icon"><img
+                        src="img/Logo/Instagram.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@perinatetvous" target="_blank" class="social-icon"><img
+                        src="img/Logo/Tiktok.png" alt="Tktok"></a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            © 2025 Périnat & Vous - Tous droits réservés
+        </div>
+    </footer>
+
+    <script src="Javascript/mentio.js"> </script>
+    <script src="Javascript/simple-transition.js"></script>
+</body>
+
+</html>

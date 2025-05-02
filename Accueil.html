@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Périnat & Vous - Pour une maternité douce & accompagnée</title>
+    <link href="css/Accueil.css" rel="stylesheet" />
+    <script src="Javascript/Accueil.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital@1&family=Nunito:wght@300;400&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <section id="Transition">
+        <div id="page-transition"
+            style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #FFF5F0; z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.5s">
+            <div
+                style="width: 50px; height: 50px; border: 4px solid #ffffff; border-top: 4px solid #E8BFC9; border-radius: 50%; animation: spin 1s linear infinite">
+            </div>
+        </div>
+
+        <style>
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+
+        <script>
+            // Cacher l'écran de transition une fois la page chargée
+            window.addEventListener('load', function () {
+                setTimeout(function () {
+                    document.getElementById('page-transition').style.opacity = '0';
+                    setTimeout(function () {
+                        document.getElementById('page-transition').style.display = 'none';
+                    }, 500);
+                }, 200);
+            });
+        </script>
+    </section>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="Accueil.html"><img src="img/perinat-et-vous-logo.png" alt="Logo Périnat & Vous"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#Accueil">Accueil</a></li>
+                    <li><a href="#prestations">Prestations</a></li>
+                    <li><a href="#temoignages">Témoignages</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Rdv.html" class="cta-button">Prendre RDV</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-important-links">
+                <a href="Accueil.html" class="mobile-Accueil-button">Accueil</a>
+                <a href="Contact.html" class="mobile-contact-button">Contact</a>
+                <a href="Rdv.html" class="mobile-cta-button">Prendre RDV</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="Accueil">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Pour une maternité douce & accompagnée</h1>
+                <p>Soins, massages et conseils pour bébé , maman <span class="etfuite">& </span>Papa</p>
+            </div>
+            <div class="hero-image">
+                <img src="img/cigogne-verte.png" alt="Cigogne" class="cigogne-logo">
+                <div class="circle-decoration circle-beige"></div>
+                <div class="circle-decoration circle-pink"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="prestations">
+        <div class="container">
+            <h2>Nos Prestations</h2>
+            <p class="services-subtitle">Des soins adaptés pour le bien-être de bébé <span class="etfuite">&</span> maman</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <a href="services/Bain-Enveloppé.html">
+                        <div class="service-icon">
+                            <img src="img/Logo/Logo1.gif" alt="Icône bain" class="service-icon-img">
+                        </div>
+                        <h3>Bain enveloppé</h3>
+                        <p>Offrez à votre bébé un moment de douceur. Ce bain aide à recréer les sensations in utero pour
+                            l'apaiser. Vous apprendrez à emmailloter, déshabiller et interpréter ses signaux corporels.
+                            Une discussion précède la séance.</p>
+                        <div class="service-price">80€ la séance</div>
+                    </a>
+                </div>
+                <div class="service-card has-promo">
+                    <!-- Option 1: Badge promo en haut à droite -->
+                    <span class="promo-ribbon"><span class="promo-percent">-20%</span></span>
+                    
+                    <a href="services/Baby-Spa.html">
+                        <div class="service-icon">
+                            <img src="img/Logo/Logo5.gif" alt="Icône spa" class="service-icon-img">
+                        </div>
+                        <h3>Baby Spa</h3>
+                        <p>Offrez à votre bébé un moment de détente et de douceur. L'hydrothérapie stimule son éveil et
+                            soulage ses petits maux. Massage, spa sécurisé, eau à 37°C : une bulle apaisante, rien que
+                            pour vous.</p>
+                            
+                        <!-- Affichage du prix avec ancien prix barré -->
+                        <div class="service-price">
+                            <span class="old-price">60€</span>
+                            <span class="new-price">48€ la séance</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <a href="services/Premiere-Seance.html">
+                        <div class="service-icon">
+                            <img src="img/Logo/Logo2.gif" alt="Icône première rencontre" class="service-icon-img">
+                        </div>
+                        <h3>Première Séance</h3>
+                        <p>Une première rencontre pour faire connaissance, explorer vos besoins et aborder librement
+                            tous
+                            les sujets qui vous tiennent à cœur, sans cadre précis.</p>
+                        <div class="service-price">20€ la séance</div>
+                    </a>
+
+                </div>
+
+                <div class="service-card">
+                    <a href="services/Counseling.html">
+                        <div class="service-icon">
+                            <img src="img/Logo/Logo6.gif" alt="Icône écoute" class="service-icon-img">
+                        </div>
+                        <h3>Counseling/Écoute</h3>
+                        <p>Un temps d'échange d'une heure, en cabinet, par téléphone ou en visio. Pour parler librement
+                            de
+                            ce que vous vivez : stress, couple, deuil, sexualité... Je vous écoute avec bienveillance,
+                            sans
+                            jugement, et vous accompagne dans vos réflexions.</p>
+                        <div class="service-price">45€ la séance</div>
+
+                    </a>
+
+                </div>
+
+                <div class="service-card">
+                    <a href="services/Gestes-Quotidiens.html">
+                        <div class="service-icon">
+                            <img src="img/Logo/Logo3.gif" alt="Icône gestes quotidiens" class="service-icon-img">
+                        </div>
+                        <h3>Découverte des gestes quotidiens</h3>
+                        <p>Apprenez les gestes du quotidien avec votre nouveau-né : change, bain, soins (yeux, nez,
+                            cordon...), biberon, habillage... Un atelier pratique pour gagner en confiance dès les
+                            premiers
+                            jours.</p>
+                        <div class="service-price">45€ la séance</div>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <a href="services/Atelier-Eveil.html">
+                        <div class="service-icon">
+                            <img src="img/Logo/Logo8.gif" alt="Icône éveil" class="service-icon-img">
+                        </div>
+                        <h3>Atelier d'éveil</h3>
+                        <p>Venez profiter d'un atelier d'éveil en groupe. Idéal pour développer la motricité et la
+                            sensorialité de votre bébé. Nous acceptons les bébés de 0 à 12 mois.</p>
+                        <div class="service-price">Sur demande</div>
+                    </a>
+                    </div>
+                    
+            </div>
+
+            
+
+            <div class="services-cta">
+                <a href="#tous-services" class="services-button">Tous nos services</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="temoignages">
+        <div class="container">
+            <h2>Témoignages</h2>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Les massages ont vraiment aidé mon bébé à mieux dormir et à être plus
+                        détendu. Je recommande!"</p>
+                    <p class="testimonial-author">Sophie L.</p>
+                    <p class="testimonial-info">Maman de Jules, 4 mois</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Les ateliers m'ont donné confiance et des outils précieux pour ces
+                        premiers mois si importants."</p>
+                    <p class="testimonial-author">Marie T.</p>
+                    <p class="testimonial-info">Maman de Léa, 2 mois</p>
+                </div>
+            </div>
+
+            <div class="testimonial-nav">
+                <div class="nav-dot dot-green active"></div>
+                <div class="nav-dot dot-pink"></div>
+                <div class="nav-dot dot-beige"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2>FAQ</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>À partir de quand peut-on venir avec un nouveau-né ?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Dès les premiers jours de vie ! Les soins comme le bain enveloppé ou le baby spa sont pensés pour les nourrissons, en respectant leur rythme et leurs besoins.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Faut-il apporter quelque chose pour les séances ?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Non, tout est prévu sur place : serviettes, huiles, matériel… Vous pouvez venir l’esprit tranquille, juste avec votre bébé et ses affaires habituelles.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Puis-je venir accompagnée d’un proche ?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Bien sûr ! Le second parent, un proche ou une amie est toujours le·la bienvenu·e, tant que cela vous met à l’aise et favorise un moment serein pour vous deux.</p>
+                </div>
+            </div>
+        </div>
+        <div class="circle-decoration circle-pinkbis"></div>
+        <div class="circle-decoration circle-beigebis"></div>
+    </section>
+
+
+    <section class="carousel-section">
+        <h2>Nos Photos</h2>
+        <div class="carousel-subtitle">Découvrez nos collections</div>
+
+        <div class="carousel-container">
+            <div class="carousel-track" id="carousel-track">
+                <div class="carousel-slide">
+                    <img src="img/ImgPersonnes/Carousel/1.webp" alt="Image 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/ImgPersonnes/Carousel/2.webp" alt="Image 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/ImgPersonnes/Carousel/3.webp" alt="Image 3">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/ImgPersonnes/Carousel/4.webp" alt="Image 4">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/ImgPersonnes/Carousel/5.webp" alt="Image 5">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/ImgPersonnes/Carousel/6.webp" alt="Image 6">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/ImgPersonnes/Carousel/7.webp" alt="Image 7">
+                </div>
+            </div>
+
+            <button class="carousel-button prev-button" id="prev-button">&#10094;</button>
+            <button class="carousel-button next-button" id="next-button">&#10095;</button>
+
+        </div>
+        <div class="circle-decoration circle-pinkbis2"></div>
+        <div class="circle-decoration circle-beigebis2"></div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <p>Périnat</p>
+                <p>& Vous</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="Obligations.html#mentions-legales" class="footer-link">Mentions légales</a>
+                <a href="Obligations.html#politique-confidentialite" class="footer-link">Politique de confidentialité</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.facebook.com/people/PerinatVous/100091369897391/" target="_blank"
+                    class="social-icon"><img src="img/Logo/Facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/perinat_et_vous" target="_blank" class="social-icon"><img
+                        src="img/Logo/Instagram.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@perinatetvous" target="_blank" class="social-icon"><img
+                        src="img/Logo/Tiktok.png" alt="Tktok"></a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            © 2025 Périnat & Vous - Tous droits réservés
+        </div>
+    </footer>
+    <script src="Javascript/simple-transition.js"></script>
+</body>
+
+</html>

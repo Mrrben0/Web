@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counseling/Écoute - Périnat & Vous</title>
+    <link href="../css/Services.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital@1&family=Nunito:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section id="Transition">
+        <div id="page-transition"
+            style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #FFF5F0; z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.5s">
+            <div
+                style="width: 50px; height: 50px; border: 4px solid #ffffff; border-top: 4px solid #E8BFC9; border-radius: 50%; animation: spin 1s linear infinite">
+            </div>
+        </div>
+
+        <style>
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+
+        <script>
+            // Cacher l'écran de transition une fois la page chargée
+            window.addEventListener('load', function () {
+                setTimeout(function () {
+                    document.getElementById('page-transition').style.opacity = '0';
+                    setTimeout(function () {
+                        document.getElementById('page-transition').style.display = 'none';
+                    }, 500);
+                }, 200);
+            });
+        </script>
+    </section>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../Accueil.html"><img src="../img/perinat-et-vous-logo.png" alt="Logo Périnat & Vous"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../Accueil.html">Accueil</a></li>
+                    <li><a href="../Accueil.html#prestations">Prestations</a></li>
+                    <li><a href="../Accueil.html#temoignages">Témoignages</a></li>
+                    <li><a href="../Contact.html">Contact</a></li>
+                    <li><a href="../Rdv.html" class="cta-button">Prendre RDV</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-important-links">
+                <a href="../Accueil.html" class="mobile-Accueil-button">Accueil</a>
+                <a href="../Contact.html" class="mobile-contact-button">Contact</a>
+                <a href="../Rdv.html" class="mobile-cta-button">Prendre RDV</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="service-detail">
+        <div class="container service-detail-container">
+            <div class="service-image">
+                <img src="../img/Img Services/imagecounseling.webp" alt="Séance de counseling et d'écoute">
+            </div>
+            <div class="service-info">
+                <h1>Counseling/Écoute</h1>
+                <div class="service-price-tag">45€ la séance</div>
+                <div class="service-description">
+                    <p>Le counseling est un temps d'échange privilégié d'une heure où vous pouvez vous exprimer
+                        librement sur tous les sujets qui vous préoccupent. Que ce soit le stress du quotidien, votre
+                        vie de couple, un deuil, des questions de sexualité ou toute autre thématique personnelle, cet
+                        espace est le vôtre.</p>
+                    <p>Disponible en cabinet, par téléphone ou en visioconférence, cette séance offre une écoute
+                        professionnelle, bienveillante et sans jugement. Mon approche vous accompagne dans vos
+                        réflexions et vous aide à trouver vos propres ressources pour avancer sereinement.</p>
+                </div>
+                <div class="service-benefits">
+                    <h3>Bienfaits</h3>
+                    <ul class="benefits-list">
+                        <li>Libération émotionnelle dans un cadre sécurisant</li>
+                        <li>Prise de recul et clarification des pensées</li>
+                        <li>Réduction du stress et de l'anxiété</li>
+                        <li>Développement de l'estime de soi</li>
+                        <li>Accompagnement personnalisé dans les périodes de transition</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="circle-decoration circle-beige"></div>
+        <div class="circle-decoration circle-pink"></div>
+        <div class="circle-decoration circle-green"></div>
+    </section>
+
+    <section class="booking-section" id="rdv">
+        <div class="container booking-container">
+            <h2>Réserver votre séance</h2>
+            <p class="booking-intro">Choisissez un créneau qui vous convient pour cette séance d'écoute d'une heure. Ce
+                temps précieux est entièrement dédié à vos besoins et à votre bien-être émotionnel.
+            </p>
+            <div class="calendar-container">
+                <div class="calendar-placeholder">
+                    <!-- Début de widget en ligne Calendly -->
+                    <div class="calendly-inline-widget"
+                        data-url="https://calendly.com/perinatetvous/counseling-ecoute-soutien?hide_event_type_details=1&background_color=fff5f0&text_color=5e544b&primary_color=e8bfc9"
+                        style="width:100%; min-width:320px; height:620px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
+                        async></script>
+                    <!-- Fin de widget en ligne Calendly -->
+                </div>
+                <div class="circle-decoration circle-pink"></div>
+                <div class="circle-decoration circle-beige"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2>Questions fréquentes</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Quelle est la différence entre le counseling et une thérapie ?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Le counseling est une approche d'accompagnement ponctuelle centrée sur l'écoute active et le
+                        soutien émotionnel. Contrairement à la thérapie qui s'inscrit souvent dans la durée et traite
+                        des problématiques profondes, le counseling vous aide à traverser une période particulière ou à
+                        clarifier une situation spécifique.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment se déroule une séance à distance ?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Les séances à distance (téléphone ou visioconférence) se déroulent exactement comme celles en
+                        présentiel. Nous convenons d'un rendez-vous, puis je vous contacte via le moyen choisi.
+                        L'écoute, la bienveillance et la confidentialité restent identiques. Je vous recommande
+                        simplement de vous installer dans un lieu calme où vous vous sentez à l'aise pour parler
+                        librement.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Combien de séances de counseling sont recommandées ?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Il n'y a pas de nombre idéal de séances. Certaines personnes trouvent un soulagement significatif
+                        après une seule séance, tandis que d'autres préfèrent un suivi régulier pendant quelques
+                        semaines ou mois. Nous évaluerons ensemble vos besoins et adapterons la fréquence en fonction de
+                        votre situation personnelle.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="related-services">
+        <div class="container">
+            <h2>Autres prestations qui pourraient vous intéresser</h2>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <a href="Premiere-Seance.html"></a>
+                    <div class="service-icon">
+                        <img src="../img/Logo/Logo2.gif" alt="Icône première séance" class="service-icon-img">
+                    </div>
+                    <h3>Première Séance</h3>
+                    <p>Une rencontre initiale pour faire connaissance et explorer vos besoins dans un cadre
+                        bienveillant.</p>
+                    <div class="service-price">20€ la séance</div>
+                    </a>
+
+                </div>
+
+                <div class="service-card">
+                    <a href="Coaching-Conjugal.html">
+                        <div class="service-icon">
+                            <img src="../img/Logo/Logo7.gif" alt="Icône coaching conjugal" class="service-icon-img">
+                        </div>
+                        <h3>Coaching Conjugal</h3>
+                        <p>Un accompagnement personnalisé pour améliorer votre relation de couple et traverser les défis
+                            ensemble.</p>
+                        <div class="service-price">30€ la séance</div>
+                    </a>
+
+                </div>
+
+                <div class="service-card">
+                    <a href="Ateliers-Collectifs.html">
+                        <div class="service-icon">
+                            <img src="../img/Logo/Logo8.gif" alt="Icône ateliers" class="service-icon-img">
+                        </div>
+                        <h3>Ateliers collectifs</h3>
+                        <p>Participez à des ateliers thématiques en petit groupe pour partager et apprendre ensemble.
+                        </p>
+                        <div class="service-price">45€ la séance</div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="circle-decoration circle-green"></div>
+            <div class="circle-decoration circle-pink"></div>
+            <div class="circle-decoration circle-beige"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <p>Périnat</p>
+                <p>& Vous</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="../Obligations.html#mentions-legales" class="footer-link">Mentions légales</a>
+                <a href="../Obligations.html#politique-confidentialite" class="footer-link">Politique de confidentialité</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.facebook.com/people/PerinatVous/100091369897391/" target="_blank"
+                    class="social-icon"><img src="../img/Logo/Facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/perinat_et_vous" target="_blank" class="social-icon"><img
+                        src="../img/Logo/Instagram.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@perinatetvous" target="_blank" class="social-icon"><img
+                        src="../img/Logo/Tiktok.png" alt="Tktok"></a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            © 2025 Périnat & Vous - Tous droits réservés
+        </div>
+    </footer>
+
+    <script>
+        // Gestion du header transparent au scroll
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('transparent');
+            } else {
+                header.classList.remove('transparent');
+            }
+        });
+
+        // Gestion des questions/réponses de la FAQ
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const toggle = question.querySelector('.faq-toggle');
+
+                // Fermer toutes les autres réponses
+                document.querySelectorAll('.faq-answer').forEach(item => {
+                    if (item !== answer) {
+                        item.classList.remove('active');
+                    }
+                });
+
+                document.querySelectorAll('.faq-toggle').forEach(item => {
+                    if (item !== toggle) {
+                        item.textContent = '+';
+                    }
+                });
+
+                // Basculer l'état de la réponse actuelle
+                answer.classList.toggle('active');
+
+                if (toggle.textContent === '+') {
+                    toggle.textContent = '-';
+                } else {
+                    toggle.textContent = '+';
+                }
+            });
+        });
+    </script>
+    <script src="../Javascript/simple-transition.js"></script>
+</body>
+
+</html>

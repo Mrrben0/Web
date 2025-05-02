@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Première Séance - Périnat & Vous</title>
+    <link href="../css/Services.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital@1&family=Nunito:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section id="Transition">
+        <div id="page-transition"
+            style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #FFF5F0; z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.5s">
+            <div
+                style="width: 50px; height: 50px; border: 4px solid #ffffff; border-top: 4px solid #E8BFC9; border-radius: 50%; animation: spin 1s linear infinite">
+            </div>
+        </div>
+
+        <style>
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+
+        <script>
+            // Cacher l'écran de transition une fois la page chargée
+            window.addEventListener('load', function () {
+                setTimeout(function () {
+                    document.getElementById('page-transition').style.opacity = '0';
+                    setTimeout(function () {
+                        document.getElementById('page-transition').style.display = 'none';
+                    }, 500);
+                }, 200);
+            });
+        </script>
+    </section>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../Accueil.html"><img src="../img/perinat-et-vous-logo.png" alt="Logo Périnat & Vous"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../Accueil.html">Accueil</a></li>
+                    <li><a href="../Accueil.html#prestations">Prestations</a></li>
+                    <li><a href="../Accueil.html#temoignages">Témoignages</a></li>
+                    <li><a href="../Contact.html">Contact</a></li>
+                    <li><a href="../Rdv.html" class="cta-button">Prendre RDV</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-important-links">
+                <a href="../Accueil.html" class="mobile-Accueil-button">Accueil</a>
+                <a href="../Contact.html" class="mobile-contact-button">Contact</a>
+                <a href="../Rdv.html" class="mobile-cta-button">Prendre RDV</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="service-detail">
+        <div class="container service-detail-container">
+            <div class="service-image">
+                <img src="../img/Img Services/imagecoachingconjugal.webp" alt="Coaching conjugal">
+            </div>
+            <div class="service-info">
+                <h1>Coaching Conjugal</h1>
+                <div class="service-price-tag">30€ la séance</div>
+                <div class="service-description">
+                    <p>Les séances de coaching conjugal offrent un espace sécurisé pour les couples en périnatalité ou pour toute autre raison. Durant ces rendez-vous personnalisés, j'offre une écoute active, bienveillante et sans jugement pour comprendre vos difficultés.</p>
+                    <p>Que vous traversiez une période de transition comme l'arrivée d'un enfant ou que vous rencontriez des défis dans votre communication, ces séances vous permettront d'envisager des changements constructifs et, si besoin, d'acquérir des outils concrets pour améliorer votre relation. Parfois, être simplement entendu suffit à soulager et à avancer ensemble.</p>
+                </div>
+                <div class="service-benefits">
+                    <h3>Avantages</h3>
+                    <ul class="benefits-list">
+                        <li>Espace de communication neutre et bienveillant</li>
+                        <li>Amélioration de la compréhension mutuelle</li>
+                        <li>Outils concrets pour renforcer votre relation</li>
+                        <li>Accompagnement personnalisé selon vos besoins spécifiques</li>
+                        <li>Gestion des défis liés à la parentalité en couple</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="circle-decoration circle-beige"></div>
+        <div class="circle-decoration circle-pink"></div>
+        <div class="circle-decoration circle-green"></div>
+    </section>
+
+    <section class="booking-section" id="rdv">
+        <div class="container booking-container">
+            <h2>Réserver votre séance de coaching conjugal</h2>
+            <p class="booking-intro">Choisissez un créneau qui vous convient pour cette séance de coaching. Ce rendez-vous est une opportunité d'améliorer votre communication et de renforcer votre relation de couple.
+            </p>
+            <div class="calendar-container">
+                <div class="calendar-placeholder">
+                    <!-- Début de widget en ligne Calendly -->
+                    <div class="calendly-inline-widget"
+                        data-url="https://calendly.com/perinatetvous/coaching-conjugal?hide_event_type_details=1&background_color=fff5f0&text_color=8f8376&primary_color=e8bfc9"
+                        style="width:100%; min-width:320px; height:620px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
+                        async></script>
+                    <!-- Fin de widget en ligne Calendly -->
+                </div>
+                <div class="circle-decoration circle-pink"></div>
+                <div class="circle-decoration circle-beige"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2>Questions fréquentes</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment se déroule une séance de coaching conjugal ?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Chaque séance est adaptée à vos besoins spécifiques. Généralement, nous commençons par identifier les points de tension ou les sujets que vous souhaitez aborder. J'offre ensuite un cadre de communication équilibré où chacun peut s'exprimer librement, tout en proposant des outils et techniques pour améliorer votre compréhension mutuelle.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Est-il préférable de venir en couple ou individuellement ?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Les deux options sont possibles et dépendent de votre situation. Les séances en couple permettent un travail direct sur la dynamique relationnelle, tandis que les séances individuelles offrent un espace pour explorer vos propres ressentis et réactions. Nous pouvons discuter de l'approche la plus adaptée lors d'un premier échange.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Combien de séances sont généralement nécessaires ?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Il n'existe pas de formule standard, car chaque couple est unique. Certains trouvent des bénéfices après seulement quelques séances, tandis que d'autres préfèrent un accompagnement plus long. Nous évaluerons ensemble vos progrès et vos besoins au fil des rencontres.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="related-services">
+        <div class="container">
+            <h2>Autres prestations qui pourraient vous intéresser</h2>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <a href="Counseling.html">
+                        <div class="service-icon">
+                            <img src="../img/Logo/Logo6.gif" alt="Icône écoute" class="service-icon-img">
+                        </div>
+                        <h3>Counseling/Écoute</h3>
+                        <p>Un temps d'échange bienveillant pour parler librement de vos préoccupations et vous accompagner
+                            dans vos réflexions.</p>
+                        <div class="service-price">45€ la séance</div>
+                    </a>
+
+                </div>
+
+                <div class="service-card">
+                    <a href="Soutien-Post-Partum.html">
+                        <div class="service-icon">
+                            <img src="../img/Logo/Logo10.gif" alt="Icône soutien post-partum" class="service-icon-img">
+                        </div>
+                        <h3>Soutien post-partum</h3>
+                        <p>Un accompagnement personnalisé pour vous soutenir pendant cette période d'adaptation après la naissance.</p>
+                        <div class="service-price">70€ la séance</div>
+                    </a>
+
+                </div>
+
+                <div class="service-card">
+                    <a href="Ateliers-Collectifs.html">
+                        <div class="service-icon">
+                            <img src="../img/Logo/Logo9.gif" alt="Icône ateliers collectifs" class="service-icon-img">
+                        </div>
+                        <h3>Ateliers collectifs</h3>
+                        <p>Rejoignez nos ateliers en petit groupe pour partager, apprendre et vous soutenir mutuellement.</p>
+                        <div class="service-price">35€ par personne</div>
+                    </div>
+                    </a>
+
+            </div>
+            <div class="circle-decoration circle-green"></div>
+            <div class="circle-decoration circle-pink"></div>
+            <div class="circle-decoration circle-beige"></div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <p>Périnat</p>
+                <p>& Vous</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="../Obligations.html#mentions-legales" class="footer-link">Mentions légales</a>
+                <a href="../Obligations.html#politique-confidentialite" class="footer-link">Politique de confidentialité</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.facebook.com/people/PerinatVous/100091369897391/" target="_blank"
+                    class="social-icon"><img src="../img/Logo/Facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/perinat_et_vous" target="_blank" class="social-icon"><img
+                        src="../img/Logo/Instagram.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@perinatetvous" target="_blank" class="social-icon"><img
+                        src="../img/Logo/Tiktok.png" alt="Tktok"></a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            © 2025 Périnat & Vous - Tous droits réservés
+        </div>
+    </footer>
+
+    <script>
+        // Gestion du header transparent au scroll
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('transparent');
+            } else {
+                header.classList.remove('transparent');
+            }
+        });
+
+        // Gestion des questions/réponses de la FAQ
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const toggle = question.querySelector('.faq-toggle');
+
+                // Fermer toutes les autres réponses
+                document.querySelectorAll('.faq-answer').forEach(item => {
+                    if (item !== answer) {
+                        item.classList.remove('active');
+                    }
+                });
+
+                document.querySelectorAll('.faq-toggle').forEach(item => {
+                    if (item !== toggle) {
+                        item.textContent = '+';
+                    }
+                });
+
+                // Basculer l'état de la réponse actuelle
+                answer.classList.toggle('active');
+
+                if (toggle.textContent === '+') {
+                    toggle.textContent = '-';
+                } else {
+                    toggle.textContent = '+';
+                }
+            });
+        });
+    </script>
+    <script src="../Javascript/simple-transition.js"></script>
+</body>
+
+</html>

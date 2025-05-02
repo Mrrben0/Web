@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier d'éveil - Périnat & Vous</title>
+    <link href="../css/Services.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital@1&family=Nunito:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section id="Transition">
+        <div id="page-transition" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #FFF5F0; z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.5s">
+            <div style="width: 50px; height: 50px; border: 4px solid #ffffff; border-top: 4px solid #E8BFC9; border-radius: 50%; animation: spin 1s linear infinite"></div>
+          </div>
+          
+          <style>
+            @keyframes spin {
+              0% { transform: rotate(0deg); }
+              100% { transform: rotate(360deg); }
+            }
+          </style>
+          
+          <script>
+            // Cacher l'écran de transition une fois la page chargée
+            window.addEventListener('load', function() {
+              setTimeout(function() {
+                document.getElementById('page-transition').style.opacity = '0';
+                setTimeout(function() {
+                  document.getElementById('page-transition').style.display = 'none';
+                }, 500);
+              }, 200);
+            });
+          </script>
+    </section>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../Accueil.html"><img src="../img/perinat-et-vous-logo.png" alt="Logo Périnat & Vous"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../Accueil.html">Accueil</a></li>
+                    <li><a href="../Accueil.html#prestations">Prestations</a></li>
+                    <li><a href="../Accueil.html#temoignages">Témoignages</a></li>
+                    <li><a href="../Contact.html">Contact</a></li>
+                    <li><a href="../Rdv.html" class="cta-button">Prendre RDV</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-important-links">
+                <a href="../Accueil.html" class="mobile-Accueil-button">Accueil</a>
+                <a href="../Contact.html" class="mobile-contact-button">Contact</a>
+                <a href="../Rdv.html" class="mobile-cta-button">Prendre RDV</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="service-detail">
+        <div class="container service-detail-container">
+            <div class="service-image">
+                <img src="../img/Img Services/imageatelier.webp" alt="Atelier d'éveil pour bébé">
+            </div>
+            <div class="service-info">
+                <h1>Atelier d'éveil</h1>
+                <div class="service-price-tag">Sur demande</div>
+                <div class="service-description">
+                    <p>L'atelier d'éveil est un moment privilégié pour accompagner l'épanouissement et le développement 
+                       de votre bébé. En groupe, dans une ambiance conviviale, venez découvrir des activités adaptées 
+                       à l'âge et aux besoins de votre enfant.</p>
+                    <p>Nous proposons différentes stimulations sensorielles et motrices dans un cadre sécurisant et 
+                       ludique. Ces ateliers sont conçus pour les bébés de 0 à 12 mois et favorisent également 
+                       les échanges entre parents.</p>
+                </div>
+                <div class="service-benefits">
+                    <h3>Bienfaits</h3>
+                    <ul class="benefits-list">
+                        <li>Développe la motricité et la coordination</li>
+                        <li>Stimule l'éveil sensoriel</li>
+                        <li>Favorise la socialisation</li>
+                        <li>Renforce le lien parent-enfant</li>
+                        <li>Offre un espace d'échange entre parents</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="circle-decoration circle-beige"></div>
+        <div class="circle-decoration circle-pink"></div>
+        <div class="circle-decoration circle-green"></div>
+    </section>
+
+    <section class="booking-section" id="rdv">
+        <div class="container booking-container">
+            <h2>Réserver votre séance</h2>
+            <p class="booking-intro">Nos ateliers d'éveil sont organisés en petits groupes pour garantir une attention 
+               personnalisée. Contactez-nous pour connaître les prochaines dates disponibles et réserver votre place.
+            </p>
+            <div class="calendar-container">
+                <div class="calendar-placeholder">
+                    <!-- Début de widget en ligne Calendly -->
+                    <div class="calendly-inline-widget"
+                        data-url="https://calendly.com/perinatetvous/atelier-d-eveil?hide_event_type_details=1&background_color=fff5f0&text_color=5e544b&primary_color=e8bfc9"
+                        style="width:100%; min-width:320px; height:620px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
+                        async></script>
+                    <!-- Fin de widget en ligne Calendly -->
+                </div>
+                <div class="circle-decoration circle-pink"></div>
+                <div class="circle-decoration circle-beige"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2>Questions fréquentes</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>À partir de quel âge mon bébé peut-il participer ?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Nos ateliers d'éveil sont adaptés aux bébés de 0 à 12 mois. Les activités sont spécifiquement conçues selon l'âge et le stade de développement de chaque enfant, permettant une approche personnalisée.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment se déroule un atelier type ?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Un atelier dure environ 1h et comprend plusieurs activités : un temps d'accueil, des jeux d'éveil sensoriel, des exercices de motricité adaptés, des comptines et un moment d'échange entre parents. Tout se déroule dans une ambiance détendue et bienveillante.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Combien de participants par atelier ?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Nous limitons nos ateliers à 6 bébés maximum pour garantir une attention personnalisée et un environnement calme. Cela permet également de favoriser les échanges de qualité entre les participants.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="related-services">
+        <div class="container">
+            <h2>Autres prestations qui pourraient vous intéresser</h2>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <a href="Bain-Enveloppé.html">
+                        <div class="service-icon">
+                            <img src="../img/Logo/Logo1.gif" alt="Icône bain" class="service-icon-img">
+                        </div>
+                        <h3>Bain enveloppé</h3>
+                        <p>Offrez à votre bébé un moment de douceur. Ce bain aide à recréer les sensations in utero pour
+                            l'apaiser. Vous apprendrez à emmailloter, déshabiller et interpréter ses signaux corporels.
+                            Une discussion précède la séance.</p>
+                        <div class="service-price">80€ la séance</div>
+                    </a>
+                </div>
+
+                <div class="service-card has-promo">
+                    <span class="promo-ribbon"><span class="promo-percent">-20%</span></span>
+                    <a href="Baby-Spa.html">
+                        <div class="service-icon">
+                            <img src="../img/Logo/Logo5.gif" alt="Icône spa" class="service-icon-img">
+                        </div>
+                        <h3>Baby Spa</h3>
+                        <p>Offrez à votre bébé un moment de détente et de douceur. L'hydrothérapie stimule son éveil et
+                            soulage ses petits maux. Massage, spa sécurisé, eau à 37°C : une bulle apaisante, rien que
+                            pour
+                            vous.</p>
+                            <div class="service-price">
+                                <span class="old-price">60€</span>
+                                <span class="new-price">48€ la séance</span>
+                            </div>
+                    </a>
+
+                </div>
+
+                <div class="service-card">
+                    <a href="Gestes-Quotidiens.html">
+                        <div class="service-icon">
+                            <img src="../img/Logo/Logo3.gif" alt="Icône gestes quotidiens" class="service-icon-img">
+                        </div>
+                        <h3>Découverte des gestes quotidiens</h3>
+                        <p>Apprenez les gestes du quotidien avec votre nouveau-né : change, bain, soins (yeux, nez,
+                            cordon...), biberon, habillage... Un atelier pratique pour gagner en confiance dès les
+                            premiers
+                            jours.</p>
+                        <div class="service-price">45€ la séance</div>
+                    </a>
+                </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <p>Périnat</p>
+                <p>& Vous</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="../Obligations.html#mentions-legales" class="footer-link">Mentions légales</a>
+                <a href="../Obligations.html#politique-confidentialite" class="footer-link">Politique de confidentialité</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.facebook.com/people/PerinatVous/100091369897391/" target="_blank"
+                    class="social-icon"><img src="../img/Logo/Facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/perinat_et_vous" target="_blank" class="social-icon"><img
+                        src="../img/Logo/Instagram.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@perinatetvous" target="_blank" class="social-icon"><img
+                        src="../img/Logo/Tiktok.png" alt="Tktok"></a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            © 2025 Périnat & Vous - Tous droits réservés
+        </div>
+    </footer>
+
+    <script>
+        // Gestion du header transparent au scroll
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('transparent');
+            } else {
+                header.classList.remove('transparent');
+            }
+        });
+
+        // Gestion des questions/réponses de la FAQ
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const toggle = question.querySelector('.faq-toggle');
+
+                // Fermer toutes les autres réponses
+                document.querySelectorAll('.faq-answer').forEach(item => {
+                    if (item !== answer) {
+                        item.classList.remove('active');
+                    }
+                });
+
+                document.querySelectorAll('.faq-toggle').forEach(item => {
+                    if (item !== toggle) {
+                        item.textContent = '+';
+                    }
+                });
+
+                // Basculer l'état de la réponse actuelle
+                answer.classList.toggle('active');
+
+                if (toggle.textContent === '+') {
+                    toggle.textContent = '-';
+                } else {
+                    toggle.textContent = '+';
+                }
+            });
+        });
+    </script>
+<script src="../Javascript/simple-transition.js"></script>
+</body>
+</html>

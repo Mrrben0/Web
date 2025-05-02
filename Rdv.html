@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Périnat & Vous - Prendre Rendez-vous</title>
+    <link href="css/Rdv.css" rel="stylesheet" />
+    <script src="Javascript/Rendez-vous.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital@1&family=Nunito:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section id="Transition">
+        <div id="page-transition" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #FFF5F0; z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.5s">
+            <div style="width: 50px; height: 50px; border: 4px solid #ffffff; border-top: 4px solid #E8BFC9; border-radius: 50%; animation: spin 1s linear infinite"></div>
+          </div>
+          
+          <style>
+            @keyframes spin {
+              0% { transform: rotate(0deg); }
+              100% { transform: rotate(360deg); }
+            }
+          </style>
+          
+          <script>
+            // Cacher l'écran de transition une fois la page chargée
+            window.addEventListener('load', function() {
+              setTimeout(function() {
+                document.getElementById('page-transition').style.opacity = '0';
+                setTimeout(function() {
+                  document.getElementById('page-transition').style.display = 'none';
+                }, 500);
+              }, 200);
+            });
+          </script>
+    </section>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="Accueil.html">
+                    <img src="img/perinat-et-vous-logo.png" alt="Logo Périnat & Vous">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Accueil.html#Accueil">Accueil</a></li>
+                    <li><a href="Accueil.html#prestations">Prestations</a></li>
+                    <li><a href="Accueil.html#temoignages">Témoignages</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Rdv.html" class="cta-button active">Prendre RDV</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-important-links">
+                <a href="Accueil.html" class="mobile-Accueil-button">Accueil</a>
+                <a href="Contact.html" class="mobile-contact-button">Contact</a>
+                <a href="Rdv.html" class="mobile-cta-button">Prendre RDV</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-title">
+        <div class="container">
+            <h1>Prendre Rendez-vous</h1>
+            <p class="subtitle">Choisissez votre prestation et réservez votre moment de bien-être</p>
+        </div>
+    </section>
+
+    <section class="services-overview">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="img/Logo/Logo1.gif" alt="Icône bain" class="service-icon-img">
+                    </div>
+                    <h3>Bain enveloppé</h3>
+                    <p>Offrez à votre bébé un moment de douceur. Ce bain aide à recréer les sensations in utero pour
+                        l'apaiser. Vous apprendrez à emmailloter, déshabiller et interpréter ses signaux corporels.
+                        Une discussion précède la séance.</p>
+                    <div class="service-price">80€ la séance</div>
+                    <div class="service-duration">Durée : 1h15</div>
+                    <a href="services/Bain-Enveloppé.html" class="reservation-button">Réserver</a>
+                </div>
+
+                <div class="service-card has-promo">
+                    <span class="promo-ribbon">Offre limitée <span class="promo-percent">-20%</span></span>
+                    <div class="service-icon">
+                        <img src="img/Logo/Logo5.gif" alt="Icône spa" class="service-icon-img">
+                    </div>
+                    <h3>Baby Spa</h3>
+                    <p>Offrez à votre bébé un moment de détente et de douceur. L'hydrothérapie stimule son éveil et
+                        soulage ses petits maux. Massage, spa sécurisé, eau à 37°C : une bulle apaisante, rien que pour
+                        vous.</p>
+                        <div class="service-price">
+                            <span class="old-price">60€</span>
+                            <span class="new-price">48€ la séance</span>
+                        </div>
+                    <div class="service-duration">Durée : 45 min</div>
+                    <a href="services/Baby-Spa.html" class="reservation-button">Réserver</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="img/Logo/Logo2.gif" alt="Icône première rencontre" class="service-icon-img">
+                    </div>
+                    <h3>Première Séance</h3>
+                    <p>Une première rencontre pour faire connaissance, explorer vos besoins et aborder librement tous
+                        les sujets qui vous tiennent à cœur, sans cadre précis.</p>
+                    <div class="service-price">20€ la séance</div>
+                    <div class="service-duration">Durée : 30 min</div>
+                    <a href="services/Premiere-Seance.html" class="reservation-button">Réserver</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="img/Logo/Logo6.gif" alt="Icône écoute" class="service-icon-img">
+                    </div>
+                    <h3>Counseling/Écoute</h3>
+                    <p>Un temps d'échange d'une heure, en cabinet, par téléphone ou en visio. Pour parler librement de
+                        ce que vous vivez : stress, couple, deuil, sexualité... Je vous écoute avec bienveillance, sans
+                        jugement, et vous accompagne dans vos réflexions.</p>
+                    <div class="service-price">45€ la séance</div>
+                    <div class="service-duration">Durée : 1h</div>
+                    <a href="services/Counseling.html" class="reservation-button">Réserver</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="img/Logo/Logo3.gif" alt="Icône gestes quotidiens" class="service-icon-img">
+                    </div>
+                    <h3>Découverte des gestes quotidiens</h3>
+                    <p>Apprenez les gestes du quotidien avec votre nouveau-né : change, bain, soins (yeux, nez,
+                        cordon...), biberon, habillage... Un atelier pratique pour gagner en confiance dès les premiers
+                        jours.</p>
+                    <div class="service-price">45€ la séance</div>
+                    <div class="service-duration">Durée : 1h30</div>
+                    <a href="services/Gestes-Quotidiens.html" class="reservation-button">Réserver</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="img/Logo/Logo8.gif" alt="Icône éveil" class="service-icon-img">
+                    </div>
+                    <h3>Atelier d'éveil</h3>
+                    <p>Venez profiter d'un atelier d'éveil en groupe. Idéal pour développer la motricité et la
+                        sensorialité de votre bébé. Nous acceptons les bébés de 0 à 12 mois.</p>
+                    <div class="service-price">Sur demande</div>
+                    <div class="service-duration">Durée : 1h</div>
+                    <a href="services/Atelier-Eveil.html" class="reservation-button">Réserver</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="img/Logo/Logo7.gif" alt="Massage" class="service-icon-img">
+                    </div>
+                    <h3>Coaching Conjugal</h3>
+                    <p>Séances individuelles ou en couple, en périnatalité ou pour toute autre raison. J'offre une
+                        écoute active, bienveillante et sans jugement pour comprendre les difficultés, envisager des
+                        changements et, si besoin, proposer des outils pour améliorer la relation. Parfois, être entendu
+                        suffit à soulager et à avancer.
+                    </p>
+                    <div class="service-price">30€ la séance</div>
+                    <div class="service-duration">Durée : 1h</div>
+                    <a href="services/Coaching-Conjugal.html" class="reservation-button">Réserver</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="img/Logo/Logo10.gif" alt="Icône postpartum" class="service-icon-img">
+                    </div>
+                    <h3>Ateliers collectifs</h3>
+                    <p>Un accompagnement personnalisé pour vous soutenir pendant cette période d'adaptation. Conseils
+                        sur l'allaitement, le sommeil, la récupération physique et le bien-être émotionnel de toute la
+                        famille.</p>
+                    <div class="service-price">45€ la séance</div>
+                    <div class="service-duration">Durée : 1h</div>
+                    <a href="services/Ateliers-Collectifs.html" class="reservation-button">Réserver</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="img/Logo/Logo8.gif" alt="Icône éveil" class="service-icon-img">
+                    </div>
+                    <h3>Atelier d'éveil</h3>
+                    <p>Rejoignez nos ateliers en petit groupe pour partager, apprendre et vous soutenir mutuellement.
+                        Thématiques variées : portage, diversification alimentaire, motricité libre...</p>
+                    <div class="service-price">35€ par personne</div>
+                    <div class="service-duration">Durée : 1h</div>
+                    <a href="services/Atelier-Eveil.html" class="reservation-button">Réserver</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="reservation-info">
+        <h3>Informations importantes</h3>
+        <ul>
+            <li>Votre rendez-vous sera confirmé par email dans les 24h</li>
+            <li>Annulation gratuite jusqu'à 48h avant le rendez-vous</li>
+            <li>Paiement sur place (espèces, carte bancaire)</li>
+            <li>Possibilité de rendez-vous à domicile selon les prestations <br> (supplément par Km)</li>
+        </ul>
+    </div>
+    </div>
+    </section>
+
+    <section class="availability">
+        <div class="container">
+            <h2>Nos disponibilités</h2>
+            <div class="availability-info">
+                <div class="availability-item">
+                    <h3>Jours d'ouverture</h3>
+                    <ul>
+                        <li>Mercredi: 9h - 18h</li>
+                        <li>Vendredi: 9h - 18h</li>
+                    </ul>
+                </div>
+                <div class="availability-item">
+                    <h3>Adresse</h3>
+                    <p>8 Chem. de l'Atelier<br>
+                        69330 Jons</p>
+                    <p>Bus: Ligne 47, Arrêt Jons</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <p>Périnat</p>
+                <p>& Vous</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="Obligations.html#mentions-legales" class="footer-link">Mentions légales</a>
+                <a href="Obligations.html#politique-confidentialite" class="footer-link">Politique de confidentialité</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.facebook.com/people/PerinatVous/100091369897391/" target="_blank"
+                    class="social-icon"><img src="img/Logo/Facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/perinat_et_vous" target="_blank" class="social-icon"><img
+                        src="img/Logo/Instagram.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@perinatetvous" target="_blank" class="social-icon"><img
+                        src="img/Logo/Tiktok.png" alt="Tktok"></a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            © 2025 Périnat & Vous - Tous droits réservés
+        </div>
+    </footer>
+    <script src="Javascript/simple-transition.js"></script>
+</body>
+
+</html>
